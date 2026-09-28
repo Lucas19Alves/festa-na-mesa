@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Festa na Mesa | Decoração de festas em São Paulo",
-  description: "Decorações compactas e personalizadas para aniversários, chás e pequenas comemorações.",
+  title: "Maria Festa na Mesa | Itens de decoração em Osasco",
+  description: "Pacotes de itens para decoração de festas com retirada e devolução em Osasco, SP.",
   keywords: ["decoração de aniversário", "festa na mesa", "decoração personalizada", "festa em casa", "decoração com balões"],
   openGraph: {
-    title: "Festa na Mesa | Sua festa linda, prática e do seu jeito",
-    description: "Decorações completas e personalizadas para transformar pequenos espaços em momentos inesquecíveis.",
+    title: "Maria Festa na Mesa | Sua festa linda, prática e do seu jeito",
+    description: "Escolha seus itens de decoração e retire em Osasco para celebrar do seu jeito.",
     type: "website",
     locale: "pt_BR",
   },
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     "codex-preview": "development",
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/logo-maria.png",
+    shortcut: "/logo-maria.png",
   },
 };
 
@@ -32,10 +32,17 @@ export default function RootLayout({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          name: "Festa na Mesa",
-          description: "Decoração compacta e personalizada para festas em São Paulo e região.",
-          areaServed: "São Paulo e região",
-          telephone: "+55 11 99999-9999",
+          name: "Maria Festa na Mesa",
+          description: "Pacotes de itens para decoração de festas com retirada e devolução em Osasco.",
+          areaServed: "Osasco, SP",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Rua Apóstolo João Batista, 16, Jardim Conceição",
+            addressLocality: "Osasco",
+            addressRegion: "SP",
+            addressCountry: "BR",
+          },
+          telephone: "+55 11 98366-0749",
           sameAs: ["https://instagram.com/festanamesa"],
         }) }} />
       </body>
